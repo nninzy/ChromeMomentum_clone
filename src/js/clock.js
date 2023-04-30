@@ -8,7 +8,7 @@ const ACTIVE = "active"
 // 2칸으로 맞춰주기
 const zeroTime = function (num) {
     const numTime = parseInt(num)
-    let answer = (numTime < 10) ? ('0' + num) : num
+    let answer = (numTime < 10) ? num.padStart(2, "0") : num
     return answer
 }
 
@@ -19,7 +19,7 @@ const twelveHour = function (num) {
     let amPm = 'AM'
     amPm = numHour < 13 ? "AM" : "PM"
     numHour = numHour < 13 ? numHour : (numHour - 12)
-    hour = numHour < 10 ? ('0' + String(numHour)) : String(numHour)
+    hour = numHour < 10 ? String(numHour).padStart(2, "0") : String(numHour)
     return (amPm + ' ' + hour)
 }
 
