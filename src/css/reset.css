@@ -20,3 +20,6 @@ select {
 select:focus {
     outline: none;
 }
+button {
+    padding: 0;
+}

@@ -13,6 +13,17 @@
     .main__aside__nav ul li span, .main__aside__btns button span {
         display: none;
     }
+    .main__aside__btns button {
+        min-width: 2rem;
+        min-height: 2rem;
+        padding: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        font-size: 1.3rem;
+    }
 }
 @media screen and (min-width: 820px){
     .main-container {
@@ -25,13 +36,16 @@
         width: 25%;
         margin-right: 3rem;
     }
-    .main__aside__nav ul {
-        flex-direction: column
+    .main__aside__nav ul, .main__aside__btns {
+        flex-direction: column;
     }
     .main__aside__btns button {
         width: 100%;
         padding: 0.5rem;
         border-radius: 5px;
+    }
+    .main__aside__btns button i {
+        margin-right: 1rem;
     }
 }
 
@@ -77,8 +91,8 @@
     background-color: var(--btn-hover--blue);
 }
 .main__aside__nav ul li div {
-    width: 2.5rem;
-    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +100,10 @@
     border-radius: 0.5rem;
     background-color: var(--section-bg--blue);
     color: white;
+}
+.main__aside__btns {
+    display: flex;
+    align-items: center;
 }
 .main__aside__btns button {
     border: none;
@@ -95,9 +113,6 @@
 .main__aside__btns button:hover {
     background-color: var(--btn-hover--blue);
     color: white;
-}
-.main__aside__btns button i {
-    margin-right: 1rem;
 }
 /* main__content */
 .main__content {
