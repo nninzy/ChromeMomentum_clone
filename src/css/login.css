@@ -1,0 +1,32 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg");
+    z-index: 10;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-form label {
+    margin-bottom: 2rem;
+}
+.login-form input {
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+.login-form input:focus {
+    outline: none;
+}
+.login-form input::placeholder {
+    text-align: center;
+}

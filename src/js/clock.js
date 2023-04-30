@@ -20,6 +20,8 @@ const twelveHour = function (num) {
     amPm = numHour < 13 ? "AM" : "PM"
     numHour = numHour < 13 ? numHour : (numHour - 12)
     hour = numHour < 10 ? String(numHour).padStart(2, "0") : String(numHour)
+    if (amPm === "AM" && hour === "00") {hour = "12"}
+    // num이 언제나 string이라는 보장이 없기에 반드시 String에 씌워서 padStart 메서드를 적용해야한다.
     return (amPm + ' ' + hour)
 }
 

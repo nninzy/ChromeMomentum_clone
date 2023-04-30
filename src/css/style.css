@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "variables.css";
 /* component style */
+@import "login.css";
 @import "header.css";
 @import "main.css";
 @import "footer.css";

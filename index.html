@@ -12,48 +12,18 @@
 </head>
 <body>
     <!-- greeting 페이지 -->
-    <div>
+    <div class="login hidden">
         <!-- background random image -->
-        <div class="hidden"></div>
-        <div>
-            <!-- 사용자 정보 입력 -->
-            <form class="hidden login-form">
-                <label for="login-input">안녕하세요, 이름을 입력해주세요</label>
-                <input id="login-input" type="text" placeholder="10자 이내로 부탁드려요" minlength="10">
-            </form>
-            <!-- 입력 이후 로딩 페이지 -->
-            <div class="hidden greeting">
-                <!--greeting message-->
-                <h2></h2>
-                <!--음파 애니메이션-->
-                <div class="lines">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                  </div>
-            </div>
-        </div>
+        <div></div>
+        <form class="login-form">
+            <label for="login-input"><h1>안녕하세요, 이름을 입력해주세요.</h1></label>
+            <input id="login-input" type="text" autocomplete="off" placeholder="10자 이내로 부탁드려요" maxlength="10">
+            <button type="submit" class="hidden"></button>
+        </form>
     </div>
 
     <!-- 사용자 페이지 -->
-    <header class="header">
+    <header class="header hidden">
         <div class="header-container">
             <!-- 로고 이미지 -->
             <div class="header__logo">
@@ -75,10 +45,14 @@
     </header>
 
     <!-- main content -->
-    <main class="main">
+    <main class="main hidden">
         <div class="main-container">
             <!-- 왼쪽 카테고리 -->
             <aside class="main__aside">
+                <!-- greeting -->
+                <div class="main__aside__greeting">
+                    <h3>안녕하세요.</h3>
+                </div>
                 <!-- clock -->
                 <div class="main__aside__clock">
                     <h1>00 : 00 : 00</h1>
@@ -111,8 +85,8 @@
                 </nav>
                 <!-- 버튼 모음-->
                 <div class="main__aside__btns">
-                    <button><i class="fa-solid fa-right-from-bracket"></i><span>log-out</span></button>
-                    <button><i class="fa-solid fa-gear"></i><span>settings</span></button>
+                    <button class="main__aside__btns__log-out"><i class="fa-solid fa-right-from-bracket"></i><span>log-out</span></button>
+                    <button class="main__aside__btns__setting"><i class="fa-solid fa-gear"></i><span>settings</span></button>
                 </div>
             </aside>
             <!-- 오른쪽 콘텐츠 -->
@@ -168,7 +142,7 @@
     </main>
 
     <!-- 제작자 정보 footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="footer-container">
             <!-- 제작자 github -->
             <div>
