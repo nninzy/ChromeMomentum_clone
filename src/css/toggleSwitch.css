@@ -1,0 +1,32 @@
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    padding: 2px;
+    border: 0.5px solid gray;
+    border-radius: 30px;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+}
+.toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    background-color: var(--btn-active--blue);
+    font-size: 0.5px;
+    color: white;
+}
+.toggle-button.active {
+    transform: translateX(28px);
+    background-color: var(--btn-hover--blue);
+}
+.toggle-switch, .toggle-button {
+    transition: all 0.2s ease-in;
+}

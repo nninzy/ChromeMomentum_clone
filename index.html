@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="short icon" href="src/img-src/meteor-logo.png">
+    <link rel="short icon" href="src/img/favicon.ico">
     <!-- style css -->
     <link rel="stylesheet" href="src/css/style.css">
     <title>Special Mement</title>
@@ -80,8 +80,13 @@
             <!-- 왼쪽 카테고리 -->
             <aside class="main__aside">
                 <!-- clock -->
-                <div>
-
+                <div class="main__aside__clock">
+                    <h1>00 : 00 : 00</h1>
+                    <div class="clock__am-pm">
+                        <label for="toggle" class="toggle-switch">
+                            <div class="toggle-button">24H</div>
+                        </label>
+                    </div>
                 </div>
                 <!-- category -->
                 <nav class="main__aside__nav">
@@ -179,6 +184,7 @@
 
     <!-- script -->
     <script src="https://kit.fontawesome.com/f62967ee76.js" crossorigin="anonymous"></script>
-    <script src="/src/js/greetings.js"></script>
+    <script src="src/js/greetings.js"></script>
+    <script src="src/js/clock.js"></script>
 </body>
 </html>
