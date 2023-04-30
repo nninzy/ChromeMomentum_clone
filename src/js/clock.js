@@ -8,7 +8,7 @@ const ACTIVE = "active"
 // 2칸으로 맞춰주기
 const zeroTime = function (num) {
     const numTime = parseInt(num)
-    let answer = (numTime < 10) ? num.padStart(2, "0") : num
+    let answer = (numTime < 10) ? String(num).padStart(2, "0") : num
     return answer
 }
 
