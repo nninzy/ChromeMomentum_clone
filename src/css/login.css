@@ -4,14 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg");
-    z-index: 10;
+    position: relative;
+}
+.login__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .login-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .login-form label {
     margin-bottom: 2rem;

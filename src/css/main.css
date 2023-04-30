@@ -152,6 +152,10 @@
     border-radius: 1rem;
     background-color: var(--section-bg--blue);
 }
+.main__content section h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
 .main__content section {
     width: 100%;
     background-color: var(--btn-hover--blue);
@@ -172,6 +176,19 @@
 .main__content__weather {
     display: flex;
     justify-content: space-between;
+}
+.main__content__random-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+}
+.main__content__random-quote span {
+    color: white;
+    text-align: center;
+}
+.main__content__random-quote .random-quote {
+    height: 50%;
 }
 .main__content__to-do {
     display: flex;

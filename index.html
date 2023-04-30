@@ -14,7 +14,7 @@
     <!-- greeting 페이지 -->
     <div class="login hidden">
         <!-- background random image -->
-        <div></div>
+        <img class="login__bg-img" src="https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg" alt="">
         <form class="login-form">
             <label for="login-input"><h1>안녕하세요, 이름을 입력해주세요.</h1></label>
             <input id="login-input" type="text" autocomplete="off" placeholder="10자 이내로 부탁드려요" maxlength="10">
@@ -32,14 +32,9 @@
             </div>
             <!-- color select 버튼 -->
             <div class="header__mode-select">
-                <label for="color-select"><i class="fa-solid fa-circle-half-stroke"></i></label>
-                <select name="" id="color-select">
-                    <option value="light" selected>light</option>
-                    <option value="dark">dark</option>
-                    <option value="blue">blue</option>
-                    <option value="purple">purple</option>
-                    <option value="pink">pink</option>
-                </select>
+                <label for="toggle" class="toggle-switch">
+                    <div class="toggle-button">L</div>
+                </label>
             </div>
         </div>
     </header>
@@ -112,8 +107,10 @@
                     </div>
                     <div>
                         <!-- 명언 api -->
-                        <section class="main__content__quote">
+                        <section class="main__content__random-quote">
                             <h3>Today's Quote</h3>
+                            <span class="random-quote">today's quote</span>
+                            <span class="random-author">-author-</span>
                         </section>
                     </div>
                 </div>
@@ -160,5 +157,6 @@
     <script src="https://kit.fontawesome.com/f62967ee76.js" crossorigin="anonymous"></script>
     <script src="src/js/greetings.js"></script>
     <script src="src/js/clock.js"></script>
+    <script src="src/js/quotes.js"></script>
 </body>
 </html>
