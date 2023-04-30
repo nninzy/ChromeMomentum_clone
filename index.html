@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="short icon" href="src/img-src/meteor-logo.png">
+    <!-- style css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Special Mement</title>
+</head>
+<body>
+    <!-- greeting 페이지 -->
+    <div>
+        <!-- background random image -->
+        <div class="hidden"></div>
+        <div>
+            <!-- 사용자 정보 입력 -->
+            <form class="hidden login-form">
+                <label for="login-input">안녕하세요, 이름을 입력해주세요</label>
+                <input id="login-input" type="text" placeholder="10자 이내로 부탁드려요" minlength="10">
+            </form>
+            <!-- 입력 이후 로딩 페이지 -->
+            <div class="hidden greeting">
+                <!--greeting message-->
+                <h2></h2>
+                <!--음파 애니메이션-->
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 사용자 페이지 -->
+    <header class="header">
+        <div class="header-container">
+            <!-- 로고 이미지 -->
+            <div class="header__logo">
+                <img src="src/img/meteor-logo.png" alt="">
+                <img src="src/img/Special Moment - MarkMaker Logo.svg" alt="">
+            </div>
+            <!-- color select 버튼 -->
+            <div class="header__mode-select">
+                <label for="color-select"><i class="fa-solid fa-circle-half-stroke"></i></label>
+                <select name="" id="color-select">
+                    <option value="light" selected>light</option>
+                    <option value="dark">dark</option>
+                    <option value="blue">blue</option>
+                    <option value="purple">purple</option>
+                    <option value="pink">pink</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main class="main">
+        <div class="main-container">
+            <!-- 왼쪽 카테고리 -->
+            <aside class="main__aside">
+                <!-- clock -->
+                <div>
+
+                </div>
+                <!-- category -->
+                <nav class="main__aside__nav">
+                    <ul>
+                        <li>
+                            <div><i class="fa-solid fa-flag-checkered"></i></div>
+                            <span>2023's goal</span>
+                        </li>
+                        <li>
+                            <div><i class="fa-solid fa-meteor"></i></div>
+                            <span>Live today</span>
+                        </li>
+                        <li>
+                            <div><i class="fa-solid fa-book"></i></div>
+                            <span>diary(준비중)</span>
+                        </li>
+                        <li>
+                            <div><i class="fa-solid fa-wallet"></i></div>
+                            <span>wallet(준비중)</span>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 버튼 모음-->
+                <div class="main__aside__btns">
+                    <button><i class="fa-solid fa-right-from-bracket"></i><span>log-out</span></button>
+                    <button><i class="fa-solid fa-gear"></i><span>settings</span></button>
+                </div>
+            </aside>
+            <!-- 오른쪽 콘텐츠 -->
+            <div class="main__content">
+                <div class="main__content__div">
+                    <!-- 날씨 및 미세먼지 정보 -->
+                    <div>
+                        <section class="main__content__weather">
+                            <!-- weather api -->
+                            <div>
+                                <h3>Today's Weather</h3>
+                            </div>
+                            <!-- 미세먼지 api-->
+                            <div>
+                                <h3>Fine-dust State</h3>
+                            </div>
+                        </section>
+                        <!-- 오늘 반드시 해낼 목표 -->
+                        <section class="main__content__today-goal">
+                            <h3>Today's Goal</h3>
+                            <input type="text">
+                        </section>
+                    </div>
+                    <div>
+                        <!-- 명언 api -->
+                        <section class="main__content__quote">
+                            <h3>Today's Quote</h3>
+                        </section>
+                    </div>
+                </div>
+                <!-- to-do-list -->
+                <section class="main__content__to-do">
+                    <!-- personal to-do -->
+                    <div>
+                        <h3>personal to-do</h3>
+                        <!-- to-do copy btn -->
+                        <button><span>copy it</span></button>
+                    </div>
+                    <!-- work to-do -->
+                    <div>
+                        <h3>work to-do</h3>
+                        <!-- to-do copy btn -->
+                        <button><span>copy it</span></button>
+                    </div>
+                </section>
+                <!-- 오늘 일기 -->
+                <section class="main__content__diary">
+                    <h3>Today's diary</h3>
+                    <input type="textarea">
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 제작자 정보 footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 제작자 github -->
+            <div>
+                <span>copyright &copy 2023 </span>
+                <a href="https://github.com/nninzy">김민지(클로이)</a>
+            </div>
+            <!-- 주요 기능 설명 guide -->
+            <div>
+                <a href="README.md">README</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/f62967ee76.js" crossorigin="anonymous"></script>
+    <script src="/src/js/greetings.js"></script>
+</body>
+</html>

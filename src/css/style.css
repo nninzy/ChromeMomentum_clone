@@ -1,0 +1,12 @@
+/* basic style */
+@import "reset.css";
+@import "variables.css";
+/* component style */
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+/* common style */
+.hidden {
+    display: none;
+}

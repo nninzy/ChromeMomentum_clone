@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+    background-color: var(--white);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+/* header__logo */
+.header__logo {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+.header__logo > img{
+    height: 100%;
+}
+.header__logo img:first-child {
+    padding: 5px;
+}
+/* headeR__mode-select */
+.header__mode-select {
+    display: flex;
+    align-items: center;
+}
+.header__mode-select > label {
+    margin-right: 0.5rem;
+}

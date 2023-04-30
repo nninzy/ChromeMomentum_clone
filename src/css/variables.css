@@ -1,0 +1,14 @@
+:root {
+    /* 원본 color  */
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(0, 0, 0, 1);
+    --blue: rgba(0,28,64, 1);
+    /* button */
+    --btn-active--blue: rgba(24,49,83, 1);
+    --btn-hover--blue: rgba(24, 49, 83, 0.5);
+    /* section color */
+    --section-bg--blue: rgba(1, 57, 131, 0.5);
+    /* main color */
+    --main-bg--white: rgba(255, 255, 255, 0.8);
+    --main-bg--blue: rgba(211, 229, 253, 0.8);
+}
