@@ -125,22 +125,35 @@
                 <!-- to-do-list -->
                 <section class="main__content__to-do">
                     <!-- personal to-do -->
-                    <div>
+                    <div class="to-do__personal-list">
                         <h3>personal to-do</h3>
-                        <!-- to-do copy btn -->
-                        <button><span>copy it</span></button>
+                        <ul>
+                        </ul>
+                        <form class="to-do__personal-input-form">
+                            <input type="text" reuired>
+                            <button type="submit" class="hidden"></button>
+                        </form>
                     </div>
                     <!-- work to-do -->
-                    <div>
+                    <div class="to-do__work-list">
                         <h3>work to-do</h3>
-                        <!-- to-do copy btn -->
-                        <button><span>copy it</span></button>
+                        <ul>
+                        </ul>
+                        <form class="to-do__work-input-form">
+                            <input type="text" reuired>
+                            <button type="submit" class="hidden"></button>
+                        </form>
                     </div>
                 </section>
                 <!-- 오늘 일기 -->
                 <section class="main__content__diary">
                     <h3>Today's diary</h3>
-                    <input type="textarea">
+                    <form class="diary__input-form hidden">
+                        <input class="diary__input-text hidden" required type="text">
+                        <button class="hidden" type="submit"></button>
+                    </form>
+                    <p class="diary__done hidden"></p>
+                    <time class="diary__done-time hidden"></time>
                 </section>
             </div>
         </div>
@@ -168,5 +181,7 @@
     <script src="src/js/quotes.js"></script>
     <script src="src/js/todayGoal.js"></script>
     <script src="src/js/backgroundImg.js"></script>
+    <script src="src/js/diary.js"></script>
+    <script src="src/js/todo.js"></script>
 </body>
 </html>

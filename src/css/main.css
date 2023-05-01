@@ -248,6 +248,42 @@
 }
 .main__content__to-do {
     display: flex;
+    justify-content: space-between;
+}
+.main__content__to-do > div {
+    width: calc(50% - 1.5rem)
+}
+.to-do__personal-input-form input, .to-do__work-input-form input {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.to-do__personal-input-form input:focus, .to-do__work-input-form input:focus {
+    outline: none;
+}
+.to-do__personal-list__item, .to-do__work-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do__personal-list__item input[type="checkbox"], .to-do__work-list__item input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.to-do__personal-list__item span, .to-do__work-list__item span  {
+    width: calc(100% - 4rem);
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
+.to-do__personal-list__item button, .to-do__work-list__item button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: inherit;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 4px;
+}
+.to-do__personal-list__item button:hover, .to-do__work-list__item button:hover {
+    background-color: var(--btn-hover--purple);
 }
 .main__content__diary {
     width: 100%;
