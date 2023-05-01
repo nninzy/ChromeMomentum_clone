@@ -28,7 +28,7 @@ const afterLogin = function () {
     greetingH3.innerText = `안녕하세요, ${savedUsername}님`
 }
 const checkLogin = function () {
-    if (savedUsername === null || savedUsername === '') {
+    if (savedUsername === null || savedUsername === "") {
         showLogin()
     } else {
         afterLogin()
@@ -36,7 +36,7 @@ const checkLogin = function () {
     loginForm.addEventListener("submit", onLoginSubmit)
 }
 // event 함수
-const onLoginSubmit = function (event) {
+const onLoginSubmit = function () {
     const username = loginInput.value
     localStorage.setItem(USERNAME_KEY, username)
     checkLogin()

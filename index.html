@@ -62,10 +62,10 @@
                     <ul>
                         <li>
                             <div><i class="fa-solid fa-flag-checkered"></i></div>
-                            <span>2023's goal</span>
+                            <span>2023's goal (준비중)</span>
                         </li>
                         <li>
-                            <div><i class="fa-solid fa-meteor"></i></div>
+                            <div class="active"><i class="fa-solid fa-meteor"></i></div>
                             <span>Live today</span>
                         </li>
                         <li>
@@ -88,7 +88,7 @@
             <div class="main__content">
                 <div class="main__content__div">
                     <!-- 날씨 및 미세먼지 정보 -->
-                    <div>
+                    <div class="main__content__inner1">
                         <section class="main__content__weather">
                             <!-- weather api -->
                             <div>
@@ -102,10 +102,18 @@
                         <!-- 오늘 반드시 해낼 목표 -->
                         <section class="main__content__today-goal">
                             <h3>Today's Goal</h3>
-                            <input type="text">
+                            <form class="input-today-goal__form hidden">
+                                <input class="today-goal__input" type="text" required placeholder="오늘의 목표는 무엇인가요?">
+                                <button class="hidden" type="submit"></button>
+                            </form>
+                            <div class="after-today-goal__div hidden">
+                                <input id="after-input-goal__checkbox" type="checkbox">
+                                <label for="after-input-goal__checkbox"></label>
+                                <button><i class="fa-solid fa-trash-can-arrow-up"></i></button>
+                            </div>
                         </section>
                     </div>
-                    <div>
+                    <div class="main__content__inner2">
                         <!-- 명언 api -->
                         <section class="main__content__random-quote">
                             <h3>Today's Quote</h3>
@@ -158,5 +166,7 @@
     <script src="src/js/greetings.js"></script>
     <script src="src/js/clock.js"></script>
     <script src="src/js/quotes.js"></script>
+    <script src="src/js/todayGoal.js"></script>
+    <script src="src/js/backgroundImg.js"></script>
 </body>
 </html>

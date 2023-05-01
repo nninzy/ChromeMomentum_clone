@@ -51,7 +51,7 @@
         flex-direction: column;
     }
     .main__aside__nav ul li, .main__aside__btns button {
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
     }
     .main__aside__btns button {
         width: 100%;
@@ -70,7 +70,6 @@
     width: 100vw;
     height: 100vh;
     padding: 3rem 0;
-    background-image: url(https://img.freepik.com/free-photo/breathtaking-shot-of-the-sea-under-a-dark-and-purple-sky-filled-with-stars_181624-23013.jpg);
 }
 .main-container {
     display: flex;
@@ -78,7 +77,7 @@
     height: 95%;
     border: 0.5px solid lightgray;
     border-radius: 15px;
-    background-color: var(--main-bg--white);
+    background-color: var(--main-bg--purple);
 }
 /* main__aside */
 .main__aside {
@@ -115,8 +114,14 @@
 .main__aside__nav ul li div {
     transition: all 0.3s ease-in-out;
 }
+.main__aside__nav ul li .active {
+    background-color: var(--btn-active--purple);
+}
+.main__aside__nav ul li .active ~ span{
+    font-weight: 600;
+}
 .main__aside__nav ul li:hover div {
-    background-color: var(--btn-hover--blue);
+    background-color: var(--btn-hover--purple);
 }
 .main__aside__nav ul li div {
     min-width: 2.5rem;
@@ -126,9 +131,9 @@
     align-items: center;
     margin-right: 1rem;
     border-radius: 0.5rem;
-    background-color: var(--section-bg--blue);
-    color: white;
+    background-color: var(--secion-bg--purple);
 }
+/* main__aside__btns */
 .main__aside__btns {
     display: flex;
     align-items: center;
@@ -139,8 +144,7 @@
     color: darkgray;
 }
 .main__aside__btns button:hover {
-    background-color: var(--btn-hover--blue);
-    color: white;
+    background-color: var(--btn-hover--purple);
 }
 /* main__content */
 .main__content {
@@ -149,34 +153,87 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--section-bg--blue);
+    background-color: inherit;
 }
 .main__content section h3 {
-    color: white;
     margin-bottom: 1rem;
 }
 .main__content section {
     width: 100%;
-    background-color: var(--btn-hover--blue);
+    background-color: var(--secion-bg--purple);
     border-radius: 1rem;
     margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .main__content__div {
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
-.main__content__div div:first-child {
+.main__content__inner1 {
     width: 70%;
     margin-right: 1rem;
 }
-.main__content__div div:last-child {
+.main__content__today-goal .today-goal__input {
+    font-size: 2rem;
+    text-align: center;
+}
+.main__content__today-goal .today-goal__input:focus {
+    outline: none;
+}
+.main__content__today-goal .after-today-goal__div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main__content__today-goal .after-today-goal__div input {
+    width: 2rem;
+    height: 2rem;
+}
+.main__content__today-goal .after-today-goal__div label {
+    font-size: 2rem;
+    width: calc(100% - 4.5rem)
+}
+.main__content__today-goal .after-today-goal__div input.active ~ label {
+    text-decoration: line-through;
+    color: darkgray;
+}
+.main__content__today-goal .after-today-goal__div button {
+    font: 2rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    background-color: var(--secion-bg--purple);
+    border: none;
+    border-radius: 0.25rem;
+    transition: 0.3s all ease-in-out;
+}
+.main__content__today-goal .after-today-goal__div button:hover {
+    background-color: var(--btn-hover--purple);
+}
+.main__content__inner2 {
     width: 30%;
+    height: 100%;
+}
+.main__content__random-quote {
+    width: 100%;
+    height: calc(100%-1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main__content__weather {
     display: flex;
     justify-content: space-between;
 }
+/* today's Goal 관련 style */
+.main__content__today-goal .after-today-goal__div {
+    display: flex;
+}
+.after-today-goal__div input.active ~ .after-today-goal__div label{
+    text-decoration: line-through;
+}
+/* random-quote 관련 style */
 .main__content__random-quote {
     display: flex;
     flex-direction: column;
@@ -184,7 +241,6 @@
     height: 90%;
 }
 .main__content__random-quote span {
-    color: white;
     text-align: center;
 }
 .main__content__random-quote .random-quote {
