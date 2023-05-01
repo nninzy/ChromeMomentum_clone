@@ -70,6 +70,7 @@
     width: 100vw;
     height: 100vh;
     padding: 3rem 0;
+    position: relative;
 }
 .main-container {
     display: flex;
@@ -78,6 +79,7 @@
     border: 0.5px solid lightgray;
     border-radius: 15px;
     background-color: var(--main-bg--purple);
+    z-index: 2;
 }
 /* main__aside */
 .main__aside {
@@ -178,9 +180,6 @@
     font-size: 2rem;
     text-align: center;
 }
-.main__content__today-goal .today-goal__input:focus {
-    outline: none;
-}
 .main__content__today-goal .after-today-goal__div {
     display: flex;
     width: 100%;
@@ -248,17 +247,23 @@
 }
 .main__content__to-do {
     display: flex;
-    justify-content: space-between;
 }
 .main__content__to-do > div {
-    width: calc(50% - 1.5rem)
+    width: 100%;
+}
+.main__content__to-do ul {
+    min-height: 23rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 0.5px solid darkgray;
+    border-radius: 1rem;
+}
+.to-do__personal-input-form {
+    margin-bottom: 1rem;
 }
 .to-do__personal-input-form input, .to-do__work-input-form input {
     font-size: 1.2rem;
     text-align: center;
-}
-.to-do__personal-input-form input:focus, .to-do__work-input-form input:focus {
-    outline: none;
 }
 .to-do__personal-list__item, .to-do__work-list__item {
     display: flex;
@@ -293,4 +298,21 @@
     background-color: inherit;
     border: none;
     border-bottom: 1px solid black;
+}
+.main__content section input:focus {
+    outline: none;
+}
+.main-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.main-bg-image img {
+    width: 100%;
+    height: 100%;
 }
